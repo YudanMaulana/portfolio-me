@@ -71,6 +71,6 @@ export const PROJECTS = [
 
 export const CONTACT = {
   address: "Cimahi City, West Java, Indonesian ",
-  phoneNo: "+83829096731 ",
+  phoneNo: "+6283829096731 ",
   email: "yudanmaulana21@gmail.com",
 };
