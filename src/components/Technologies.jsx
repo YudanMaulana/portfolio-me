@@ -1,7 +1,7 @@
 import { RiReactjsLine } from "react-icons/ri"
 import { TbBrandNextjs } from "react-icons/tb"
 import { FaFlutter } from "react-icons/fa6";
-import { DiRedis } from "react-icons/di"
+import { FaUbuntu } from "react-icons/fa";
 import { FaNodeJs } from "react-icons/fa"
 import { RiTailwindCssFill } from "react-icons/ri";
 import { motion } from "motion/react"
@@ -58,7 +58,7 @@ const Technologies = () => {
         initial="initial"
         animate="animate"
         className="rounded-2xl border-4 border-neutral-800 p-4">
-            <DiRedis className="text-7xl text-red-700" />
+            <FaUbuntu className="text-7xl text-orange-700" />
         </motion.div>
         <motion.div
         variants={iconVariants(6)}

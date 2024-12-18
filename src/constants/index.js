@@ -16,6 +16,12 @@ export const EXPERIENCES = [
     technologies: ["NodeJs", "React.js", "Google Spreadsheets", "Tailwindcss"],
   },
 ];
+export const LINK = {
+  linkedin: "https://www.linkedin.com/in/yudanmaulana?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app ",
+  github: "https://github.com/YudanMaulana",
+  buymeacoffe: "https://buymeacoffee.com/yudanmaulana",
+  instagram: "https://www.instagram.com/yudan_maulana21?igsh=MTg2NjhwbnZxZnl1Ng==",
+}
 
 export const PROJECTS = [
   {
