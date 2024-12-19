@@ -1,6 +1,6 @@
-import { HERO_CONTENT } from "../constants"
 import profilePic from "../assets/yudanMaulanaProfile.jpg"
 import { motion } from "motion/react"
+import { useTranslation } from "react-i18next";
 
 const container = (delay) => ({
     hidden: { x: -100, opacity: 0},
@@ -12,6 +12,9 @@ const container = (delay) => ({
 })
 
 function Hero() {
+
+    const { t } = useTranslation();
+
   return <div className="border-b border-neutral-900 pb-24 lg:mb-35">
     <div className="flex flex-wrap">
         <div className="w-full lg:w-1/2">
@@ -23,12 +26,12 @@ function Hero() {
                 <motion.span variants={container(0.5)}
                 initial="hidden"
                 animate="visible" 
-                className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-3xl tracking-tight text-transparent">Software Enggineer</motion.span>
+                className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-3xl tracking-tight text-transparent">{t("title")}</motion.span>
                 <motion.p variants={container(1)}
                 initial="hidden"
                 animate="visible" 
                 className="my-2 max-w-xl py-6 font-light ">
-                    {HERO_CONTENT}
+                    {t("HERO_CONTENT")}
                 </motion.p>
             </div>
         </div>
