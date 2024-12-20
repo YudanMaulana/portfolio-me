@@ -1,7 +1,36 @@
+
 {
     "HERO_CONTENT": "Software development is a dynamic field focused on creating innovative and functional applications. It requires a blend of skills in front-end technologies such as React and Vue.js, combined with expertise in back-end systems like Node.js and databases like MySQL and MongoDB. With hands-on experience, developers craft scalable and efficient solutions that cater to business needs while enhancing user experiences. The ultimate goal is to build software that not only meets technical requirements but also drives growth and adds value to users.",
     "title": "Software Engineer",
     "about": "About ",
     "me": "Me",
-    "ABOUT_TEXT": "I am a dedicated and versatile software engineer with a passion for building robust and scalable applications. With 5 years of professional experience, I have worked with a variety of technologies, including Java, Python, C++, and cloud platforms like AWS and Azure. My journey in software engineering began with a deep curiosity for how things work, and it has evolved into a career where I continuously strive to learn and adapt to new challenges. I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions. Outside of coding, I enjoy staying active, exploring new technologies, and contributing to open-source projects."
-  }  
+    "ABOUT_TEXT": "I am a dedicated and versatile software engineer with a passion for building robust and scalable applications. With 5 years of professional experience, I have worked with a variety of technologies, including Java, Python, C++, and cloud platforms like AWS and Azure. My journey in software engineering began with a deep curiosity for how things work, and it has evolved into a career where I continuously strive to learn and adapt to new challenges. I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions. Outside of coding, I enjoy staying active, exploring new technologies, and contributing to open-source projects.",
+    "Technologies": "Technologies",
+    "Experience": "Experience",
+    "role": "Lead a team in developing and maintaining web applications using React.js, Tailwindcss, and Node.js. Implement Google Sheets API to perform online registration. Collaborate with stakeholders to determine project requirements and timelines.",
+    "projects": [
+      {
+        "title": "E-Commerce Website",
+        "description": "A fully functional e-commerce website with features like product listing, shopping cart, and user authentication.",
+        "technologies": ["HTML", "CSS", "React", "Node.js", "MongoDB"]
+      },
+      {
+        "title": "Task Management App",
+        "description": "An application for managing tasks and projects, with features such as task creation, assignment, and progress tracking.",
+        "technologies": ["HTML", "CSS", "Angular", "Firebase"]
+      },
+      {
+        "title": "Portfolio Website",
+        "description": "A personal portfolio website showcasing projects, skills, and contact information.",
+        "technologies": ["HTML", "CSS", "React", "Bootstrap"]
+      },
+      {
+        "title": "Blogging Platform",
+        "description": "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
+        "technologies": ["HTML", "CSS", "Vue.js", "Express", "mySQL"]
+      }
+    ],
+    "Projects": "Projects",
+    "GetInTouch": "Get in Touch",
+    "address": "Cimahi City, West Java, Indonesian "
+  }

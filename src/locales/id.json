@@ -3,5 +3,33 @@
   "title": "Pengembang Perangkat Lunak",
   "about": "Tentang ",
   "me": "Saya",
-  "ABOUT_TEXT": "Saya adalah seorang insinyur perangkat lunak yang berdedikasi dan serbaguna dengan hasrat untuk membangun aplikasi yang kuat dan dapat diskalakan. Dengan pengalaman profesional selama 5 tahun, saya telah bekerja dengan berbagai teknologi, termasuk Java, Python, C++, dan platform cloud seperti AWS dan Azure. Perjalanan saya dalam rekayasa perangkat lunak dimulai dengan keingintahuan yang mendalam tentang bagaimana segala sesuatunya bekerja, dan telah berkembang menjadi karier di mana saya terus berusaha untuk belajar dan beradaptasi dengan tantangan baru. Saya berkembang dalam lingkungan yang kolaboratif dan senang memecahkan masalah yang kompleks untuk memberikan solusi berkualitas tinggi. Di luar pengkodean, saya senang tetap aktif, mengeksplorasi teknologi baru, dan berkontribusi pada proyek-proyek sumber terbuka."
+  "ABOUT_TEXT": "Saya adalah seorang insinyur perangkat lunak yang berdedikasi dan serbaguna dengan hasrat untuk membangun aplikasi yang kuat dan dapat diskalakan. Dengan pengalaman profesional selama 5 tahun, saya telah bekerja dengan berbagai teknologi, termasuk Java, Python, C++, dan platform cloud seperti AWS dan Azure. Perjalanan saya dalam rekayasa perangkat lunak dimulai dengan keingintahuan yang mendalam tentang bagaimana segala sesuatunya bekerja, dan telah berkembang menjadi karier di mana saya terus berusaha untuk belajar dan beradaptasi dengan tantangan baru. Saya berkembang dalam lingkungan yang kolaboratif dan senang memecahkan masalah yang kompleks untuk memberikan solusi berkualitas tinggi. Di luar pengkodean, saya senang tetap aktif, mengeksplorasi teknologi baru, dan berkontribusi pada proyek-proyek sumber terbuka.",
+  "Technologies": "Teknologi",
+  "Experience": "Pengalaman",
+  "role": "Memimpin tim dalam mengembangkan dan memelihara aplikasi web menggunakan React.js, Tailwindcss, dan Node.js. Menerapkan Google Sheets API untuk melakukan registrasi online. Berkolaborasi dengan para pemangku kepentingan untuk menentukan persyaratan dan jadwal proyek.",
+  "projects": [
+      {
+        "title": "E-Commerce Website",
+        "description": "Situs web e-commerce yang berfungsi penuh dengan fitur-fitur seperti daftar produk, keranjang belanja, dan otentikasi pengguna.",
+        "technologies": ["HTML", "CSS", "React", "Node.js", "MongoDB"]
+      },
+      {
+        "title": "Task Management App",
+        "description": "Aplikasi untuk mengelola tugas dan proyek, dengan fitur-fitur seperti pembuatan tugas, penugasan, dan pelacakan kemajuan.",
+        "technologies": ["HTML", "CSS", "Angular", "Firebase"]
+      },
+      {
+        "title": "Task Management App",
+        "description": "Situs web portofolio pribadi yang menampilkan proyek, keahlian, dan informasi kontak.",
+        "technologies": ["HTML", "CSS", "React", "Bootstrap"]
+      },
+      {
+        "title": "Blogging Platform",
+        "description": "Platform untuk membuat dan menerbitkan postingan blog, dengan fitur-fitur seperti pengeditan teks yang kaya, komentar, dan profil pengguna.",
+        "technologies": ["HTML", "CSS", "Vue.js", "Express", "mySQL"]
+      }
+    ],
+    "Projects": "Proyek",
+    "GetInTouch": "Hubungi",
+    "address": "Kota Cimahi, Jawa Barat, Indonesia "
 }  
