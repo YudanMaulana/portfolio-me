@@ -1,4 +1,4 @@
-import { EXPERIENCES } from "../constants"
+import { EXPERIENCES } from "../locales"
 import { motion } from "motion/react"
 import { useTranslation } from "react-i18next";
 

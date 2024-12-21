@@ -1,4 +1,4 @@
-import { CONTACT } from "."
+import { CONTACT } from "../locales"
 import { motion } from "motion/react"
 import { useTranslation } from "react-i18next";
 

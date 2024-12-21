@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
-import { PROJECTS } from "../constants";
+import { PROJECTS } from "../locales";
 
 const Projects = () => {
   const { t } = useTranslation();
