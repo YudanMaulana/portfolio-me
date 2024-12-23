@@ -19,19 +19,15 @@ export const LINK = {
 }
 export const PROJECTS = [
   {
-    title: "E-Commerce Website",
     image: project1,
   },
   {
-    title: "Task Management App",
     image: project2,
   },
   {
-    title: "Portfolio Website",
     image: project3,
   },
   {
-    title: "Blogging Platform",
     image: project4,
   },
 ];

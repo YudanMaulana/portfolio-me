@@ -9,9 +9,9 @@
   "role": "Memimpin tim dalam mengembangkan dan memelihara aplikasi web menggunakan React.js, Tailwindcss, dan Node.js. Menerapkan Google Sheets API untuk melakukan registrasi online. Berkolaborasi dengan para pemangku kepentingan untuk menentukan persyaratan dan jadwal proyek.",
   "projects": [
       {
-        "title": "E-Commerce Website",
-        "description": "Situs web e-commerce yang berfungsi penuh dengan fitur-fitur seperti daftar produk, keranjang belanja, dan otentikasi pengguna.",
-        "technologies": ["HTML", "CSS", "React", "Node.js", "MongoDB"]
+        "title": "Knitting Machine Instant Efficientcy",
+        "description": "aplikasi ini berguna untuk memantau efisiensi mesin rajut bundar dengan RPM ke persen dan menit berdasarkan jam kerja.",
+        "technologies": ["Flutter", "Android Studio"]
       },
       {
         "title": "Task Management App",
