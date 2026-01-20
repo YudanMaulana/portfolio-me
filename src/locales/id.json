@@ -6,6 +6,14 @@
   "ABOUT_TEXT": "Saya adalah seorang insinyur perangkat lunak yang berdedikasi dan serbaguna dengan hasrat untuk membangun aplikasi yang kuat dan dapat diskalakan. Dengan pengalaman profesional selama 5 tahun, saya telah bekerja dengan berbagai teknologi, termasuk Java, Python, C++, dan platform cloud seperti AWS dan Azure. Perjalanan saya dalam rekayasa perangkat lunak dimulai dengan keingintahuan yang mendalam tentang bagaimana segala sesuatunya bekerja, dan telah berkembang menjadi karier di mana saya terus berusaha untuk belajar dan beradaptasi dengan tantangan baru. Saya berkembang dalam lingkungan yang kolaboratif dan senang memecahkan masalah yang kompleks untuk memberikan solusi berkualitas tinggi. Di luar pengkodean, saya senang tetap aktif, mengeksplorasi teknologi baru, dan berkontribusi pada proyek-proyek sumber terbuka.",
   "Technologies": "Teknologi",
   "Experience": "Pengalaman",
+    "experience": {
+    "xquest": {
+      "description": "Sebuah proyek wahana hiburan berbasis teknologi 5D yang didirikan oleh PT Garudafood Sumedang. Bertanggung jawab dalam implementasi sistem game 5D menggunakan videotron, automasi wahana berbasis IoT, integrasi RFID, sensor-sensor, serta pemeliharaan sistem perangkat keras dan perangkat lunak."
+    },
+    "zeintour": {
+      "description": "Mengembangkan dan memelihara aplikasi web menggunakan teknologi full-stack modern, menangani front-end dan back-end, serta integrasi layanan pihak ketiga untuk mendukung proses bisnis."
+    }
+  },
   "role": "Memimpin tim dalam mengembangkan dan memelihara aplikasi web menggunakan React.js, Tailwindcss, dan Node.js. Menerapkan Google Sheets API untuk melakukan registrasi online. Berkolaborasi dengan para pemangku kepentingan untuk menentukan persyaratan dan jadwal proyek.",
   "projects": [
       {

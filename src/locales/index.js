@@ -5,34 +5,47 @@ import project4 from "../assets/projects/project-4.jpg";
 
 export const EXPERIENCES = [
   {
+    id: "xquest",
+    year: "2026 - Present",
+    role: "IT / Technical Support",
+    company: "Xquest Wahana 5D",
+    technologies: [
+      "IoT",
+      "RFID",
+      "Automation",
+      "Sensors",
+      "Videotron",
+      "Networking",
+    ],
+  },
+  {
+    id: "zeintour",
     year: "2023 - Present",
     role: "Full Stack Web Developer",
-    company: "PT Zeintour International.",
+    company: "PT Zeintour International",
     technologies: ["NodeJs", "React.js", "Spreadsheets", "Tailwindcss"],
   },
 ];
+
+
 export const LINK = {
-  linkedin: "https://www.linkedin.com/in/yudanmaulana?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app ",
+  linkedin:
+    "https://www.linkedin.com/in/yudanmaulana?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   github: "https://github.com/YudanMaulana",
   buymeacoffe: "https://buymeacoffee.com/yudanmaulana",
-  instagram: "https://www.instagram.com/yudan_maulana21?igsh=MTg2NjhwbnZxZnl1Ng==",
-}
+  instagram:
+    "https://www.instagram.com/yudan_maulana21?igsh=MTg2NjhwbnZxZnl1Ng==",
+};
+
 export const PROJECTS = [
-  {
-    image: project1,
-  },
-  {
-    image: project2,
-  },
-  {
-    image: project3,
-  },
-  {
-    image: project4,
-  },
+  { image: project1 },
+  { image: project2 },
+  { image: project3 },
+  { image: project4 },
 ];
 
 export const CONTACT = {
-  phoneNo: "+6283829096731 ",
+  phoneNo: "+62 898-9244-418",
+  whatsapp: "628989244418",
   email: "yudanmaulana21@gmail.com",
 };

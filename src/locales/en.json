@@ -7,6 +7,14 @@
     "ABOUT_TEXT": "I am a dedicated and versatile software engineer with a passion for building robust and scalable applications. With 5 years of professional experience, I have worked with a variety of technologies, including Java, Python, C++, and cloud platforms like AWS and Azure. My journey in software engineering began with a deep curiosity for how things work, and it has evolved into a career where I continuously strive to learn and adapt to new challenges. I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions. Outside of coding, I enjoy staying active, exploring new technologies, and contributing to open-source projects.",
     "Technologies": "Technologies",
     "Experience": "Experience",
+  "experience": {
+    "xquest": {
+      "description": "A 5D entertainment attraction project established by PT Garudafood Sumedang. Responsible for implementing 5D gaming systems using videotron displays, automating attractions with IoT technology, integrating RFID systems, various sensors, and maintaining hardware and software systems."
+    },
+    "zeintour": {
+      "description": "Developing and maintaining web applications using modern full-stack technologies, handling both front-end and back-end development, and integrating third-party services to support business processes."
+    }
+  },
     "role": "Lead a team in developing and maintaining web applications using React.js, Tailwindcss, and Node.js. Implement Google Sheets API to perform online registration. Collaborate with stakeholders to determine project requirements and timelines.",
     "projects": [
       {
