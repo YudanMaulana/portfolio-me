@@ -22,11 +22,17 @@
         "description": "This application is useful for monitoring the efficiency of circular knitting machines with RPM to percent and minutes based on working hours.",
         "technologies": ["Flutter", "Android Studio"]
       },
-      {
-        "title": "Task Management App",
-        "description": "An application for managing tasks and projects, with features such as task creation, assignment, and progress tracking.",
-        "technologies": ["HTML", "CSS", "Angular", "Firebase"]
-      },
+    {
+      "title": "Web Officer Tracking",
+      "description": "A web application designed to monitor officer performance in real time, accessible via a shared link for authorized users. Integrated with Flutter WebView to prevent URL re-entry and hide the web address from users. The system records activity timing, supports full CRUD operations, and allows data export in Excel format.",
+      "technologies": [
+        "React.js",
+        "Flutter",
+        "Tailwindcss",
+        "Firebase",
+        "Framer Motion"
+      ]
+    },
       {
         "title": "Portfolio Website",
         "description": "A personal portfolio website showcasing projects, skills, and contact information.",

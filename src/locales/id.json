@@ -21,11 +21,17 @@
         "description": "aplikasi ini berguna untuk memantau efisiensi mesin rajut bundar dengan RPM ke persen dan menit berdasarkan jam kerja.",
         "technologies": ["Flutter", "Android Studio"]
       },
-      {
-        "title": "Task Management App",
-        "description": "Aplikasi untuk mengelola tugas dan proyek, dengan fitur-fitur seperti pembuatan tugas, penugasan, dan pelacakan kemajuan.",
-        "technologies": ["HTML", "CSS", "Angular", "Firebase"]
-      },
+    {
+      "title": "Web Officer Tracking",
+      "description": "Aplikasi web untuk memantau kinerja seluruh officer secara realtime yang dapat diakses oleh pengguna melalui tautan khusus. Terintegrasi dengan Flutter WebView untuk mencegah penulisan ulang URL dan menyembunyikan alamat web dari pengguna. Sistem ini mencatat waktu aktivitas, mendukung operasi CRUD data, serta menyediakan fitur ekspor laporan ke dalam format Excel.",
+      "technologies": [
+        "React.js",
+        "Flutter",
+        "Tailwindcss",
+        "Firebase",
+        "Framer Motion"
+      ]
+    },
       {
         "title": "Task Management App",
         "description": "Situs web portofolio pribadi yang menampilkan proyek, keahlian, dan informasi kontak.",
