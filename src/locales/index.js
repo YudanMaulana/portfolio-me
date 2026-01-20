@@ -7,7 +7,7 @@ import project5 from "../assets/projects/project-5.jpg";
 export const EXPERIENCES = [
   {
     id: "xquest",
-    year: "2026 - Present",
+    year: "2025 - Present",
     role: "IT / Technical Support",
     company: "Xquest Wahana 5D",
     technologies: [
