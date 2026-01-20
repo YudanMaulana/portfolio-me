@@ -32,11 +32,15 @@
         "Framer Motion"
       ]
     },
-      {
-        "title": "Task Management App",
-        "description": "Situs web portofolio pribadi yang menampilkan proyek, keahlian, dan informasi kontak.",
-        "technologies": ["HTML", "CSS", "React", "Bootstrap"]
-      },
+{
+  "title": "Web Caffe Chocolatos Sumedang",
+  "description": "Website katalog menu caffe Chocolatos Sumedang yang dapat diakses dengan memindai QR Code unik di lokasi. Dirancang dengan identitas visual khas Chocolatos untuk menarik perhatian pelanggan, serta memungkinkan pengunjung melihat menu kapan saja dan di mana saja tanpa perlu menginstal aplikasi.",
+  "technologies": [
+    "React.js",
+    "Tailwindcss",
+    "Framer Motion"
+  ]
+},
       {
         "title": "Blogging Platform",
         "description": "Platform untuk membuat dan menerbitkan postingan blog, dengan fitur-fitur seperti pengeditan teks yang kaya, komentar, dan profil pengguna.",

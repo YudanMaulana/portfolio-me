@@ -1,12 +1,11 @@
-
 {
-    "HERO_CONTENT": "Software development is a dynamic field focused on creating innovative and functional applications. It requires a blend of skills in front-end technologies such as React and Vue.js, combined with expertise in back-end systems like Node.js and databases like MySQL and MongoDB. With hands-on experience, developers craft scalable and efficient solutions that cater to business needs while enhancing user experiences. The ultimate goal is to build software that not only meets technical requirements but also drives growth and adds value to users.",
-    "title": "Software Engineer",
-    "about": "About ",
-    "me": "Me",
-    "ABOUT_TEXT": "I am a dedicated and versatile software engineer with a passion for building robust and scalable applications. With 5 years of professional experience, I have worked with a variety of technologies, including Java, Python, C++, and cloud platforms like AWS and Azure. My journey in software engineering began with a deep curiosity for how things work, and it has evolved into a career where I continuously strive to learn and adapt to new challenges. I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions. Outside of coding, I enjoy staying active, exploring new technologies, and contributing to open-source projects.",
-    "Technologies": "Technologies",
-    "Experience": "Experience",
+  "HERO_CONTENT": "Software development is a dynamic field focused on creating innovative and functional applications. It requires a blend of skills in front-end technologies such as React and Vue.js, combined with expertise in back-end systems like Node.js and databases like MySQL and MongoDB. With hands-on experience, developers craft scalable and efficient solutions that cater to business needs while enhancing user experiences. The ultimate goal is to build software that not only meets technical requirements but also drives growth and adds value to users.",
+  "title": "Software Engineer",
+  "about": "About ",
+  "me": "Me",
+  "ABOUT_TEXT": "I am a dedicated and versatile software engineer with a passion for building robust and scalable applications. With 5 years of professional experience, I have worked with a variety of technologies, including Java, Python, C++, and cloud platforms like AWS and Azure. My journey in software engineering began with a deep curiosity for how things work, and it has evolved into a career where I continuously strive to learn and adapt to new challenges. I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions. Outside of coding, I enjoy staying active, exploring new technologies, and contributing to open-source projects.",
+  "Technologies": "Technologies",
+  "Experience": "Experience",
   "experience": {
     "xquest": {
       "description": "A 5D entertainment attraction project established by PT Garudafood Sumedang. Responsible for implementing 5D gaming systems using videotron displays, automating attractions with IoT technology, integrating RFID systems, various sensors, and maintaining hardware and software systems."
@@ -15,13 +14,16 @@
       "description": "Developing and maintaining web applications using modern full-stack technologies, handling both front-end and back-end development, and integrating third-party services to support business processes."
     }
   },
-    "role": "Lead a team in developing and maintaining web applications using React.js, Tailwindcss, and Node.js. Implement Google Sheets API to perform online registration. Collaborate with stakeholders to determine project requirements and timelines.",
-    "projects": [
-      {
-        "title": "Knitting Machine Instant Efficientcy",
-        "description": "This application is useful for monitoring the efficiency of circular knitting machines with RPM to percent and minutes based on working hours.",
-        "technologies": ["Flutter", "Android Studio"]
-      },
+  "role": "Lead a team in developing and maintaining web applications using React.js, Tailwindcss, and Node.js. Implement Google Sheets API to perform online registration. Collaborate with stakeholders to determine project requirements and timelines.",
+  "projects": [
+    {
+      "title": "Knitting Machine Instant Efficientcy",
+      "description": "This application is useful for monitoring the efficiency of circular knitting machines with RPM to percent and minutes based on working hours.",
+      "technologies": [
+        "Flutter",
+        "Android Studio"
+      ]
+    },
     {
       "title": "Web Officer Tracking",
       "description": "A web application designed to monitor officer performance in real time, accessible via a shared link for authorized users. Integrated with Flutter WebView to prevent URL re-entry and hide the web address from users. The system records activity timing, supports full CRUD operations, and allows data export in Excel format.",
@@ -33,19 +35,29 @@
         "Framer Motion"
       ]
     },
-      {
-        "title": "Portfolio Website",
-        "description": "A personal portfolio website showcasing projects, skills, and contact information.",
-        "technologies": ["HTML", "CSS", "React", "Bootstrap"]
-      },
-      {
-        "title": "Blogging Platform",
-        "description": "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
-        "technologies": ["HTML", "CSS", "Vue.js", "Express", "mySQL"]
-      }
-    ],
-    "Projects": "Projects",
-    "GetInTouch": "Get in Touch",
-    "address": "Cimahi City, West Java, Indonesian ",
-    "ToTop": "↑ To Top"
-  }
+    {
+      "title": "Chocolatos Sumedang Café Website",
+      "description": "A café menu website for Chocolatos Sumedang, accessible by scanning a unique QR Code at the location. Designed with Chocolatos’ distinctive visual identity to attract customers, allowing them to view the menu anytime and anywhere without installing any application.",
+      "technologies": [
+        "React.js",
+        "Tailwindcss",
+        "Framer Motion"
+      ]
+    },
+    {
+      "title": "Blogging Platform",
+      "description": "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
+      "technologies": [
+        "HTML",
+        "CSS",
+        "Vue.js",
+        "Express",
+        "mySQL"
+      ]
+    }
+  ],
+  "Projects": "Projects",
+  "GetInTouch": "Get in Touch",
+  "address": "Cimahi City, West Java, Indonesian ",
+  "ToTop": "↑ To Top"
+}
