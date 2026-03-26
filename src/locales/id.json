@@ -1,12 +1,12 @@
 {
-  "HERO_CONTENT": "Pengembangan perangkat lunak adalah bidang dinamis yang berfokus pada pembuatan aplikasi yang inovatif dan fungsional. Hal ini membutuhkan perpaduan keterampilan dalam teknologi front-end seperti React dan Vue.js, yang dikombinasikan dengan keahlian dalam sistem back-end seperti Node.js dan database seperti MySQL dan MongoDB. Dengan pengalaman langsung, para pengembang membuat solusi yang dapat diskalakan dan efisien yang memenuhi kebutuhan bisnis sekaligus meningkatkan pengalaman pengguna. Tujuan utamanya adalah membangun perangkat lunak yang tidak hanya memenuhi persyaratan teknis, tetapi juga mendorong pertumbuhan dan memberikan nilai tambah bagi pengguna.",
-  "title": "Pengembang Perangkat Lunak",
+  "HERO_CONTENT": "Pengembangan full stack dengan Flutter merupakan bidang yang dinamis dan berfokus pada pembuatan aplikasi yang serbaguna dan fungsional. Bidang ini membutuhkan perpaduan keterampilan dalam teknologi front-end seperti Dart dan Widgets, yang dipadukan dengan keahlian dalam sistem back-end seperti Firebase serta basis data seperti Supabase atau PostgreSQL. Dengan pengalaman praktis, para pengembang menciptakan solusi yang skalabel dan efisien untuk memenuhi kebutuhan bisnis sekaligus meningkatkan pengalaman pengguna di platform seluler, web, dan desktop. Tujuan utamanya adalah membangun perangkat lunak yang tidak hanya memenuhi persyaratan teknis, tetapi juga mendorong pertumbuhan dan memberikan nilai tambah bagi pengguna.",
+  "title": "Full-Stack Developer",
   "about": "Tentang ",
   "me": "Saya",
-  "ABOUT_TEXT": "Saya adalah seorang insinyur perangkat lunak yang berdedikasi dan serbaguna dengan hasrat untuk membangun aplikasi yang kuat dan dapat diskalakan. Dengan pengalaman profesional selama 5 tahun, saya telah bekerja dengan berbagai teknologi, termasuk Java, Python, C++, dan platform cloud seperti AWS dan Azure. Perjalanan saya dalam rekayasa perangkat lunak dimulai dengan keingintahuan yang mendalam tentang bagaimana segala sesuatunya bekerja, dan telah berkembang menjadi karier di mana saya terus berusaha untuk belajar dan beradaptasi dengan tantangan baru. Saya berkembang dalam lingkungan yang kolaboratif dan senang memecahkan masalah yang kompleks untuk memberikan solusi berkualitas tinggi. Di luar pengkodean, saya senang tetap aktif, mengeksplorasi teknologi baru, dan berkontribusi pada proyek-proyek sumber terbuka.",
+  "ABOUT_TEXT": "Saya adalah seorang Pengembang Full Stack Flutter yang berdedikasi dan serba bisa, dengan minat yang besar dalam membangun aplikasi yang tangguh dan lintas platform. Dengan pengalaman profesional di bidang Dukungan TI dan Pengembangan, saya telah bekerja dengan berbagai teknologi, termasuk Dart, React, serta platform cloud seperti Firebase dan Supabase. Perjalanan saya di bidang rekayasa perangkat lunak bermula dari rasa ingin tahu yang mendalam tentang cara kerja berbagai hal, dan telah berkembang menjadi karier di mana saya terus berupaya untuk belajar dan beradaptasi dengan tantangan baru. Saya berkembang dalam lingkungan kolaboratif dan menikmati memecahkan masalah kompleks untuk menghasilkan solusi berkualitas tinggi. Di luar kegiatan coding, saya senang tetap aktif, menjelajahi teknologi baru, dan berkontribusi pada proyek-proyek open-source.",
   "Technologies": "Teknologi",
   "Experience": "Pengalaman",
-    "experience": {
+  "experience": {
     "xquest": {
       "description": "Sebuah proyek wahana hiburan berbasis teknologi 5D yang didirikan oleh PT Garudafood Sumedang. Bertanggung jawab dalam implementasi sistem game 5D menggunakan videotron, automasi wahana berbasis IoT, integrasi RFID, sensor-sensor, serta pemeliharaan sistem perangkat keras dan perangkat lunak."
     },
@@ -16,11 +16,14 @@
   },
   "role": "Memimpin tim dalam mengembangkan dan memelihara aplikasi web menggunakan React.js, Tailwindcss, dan Node.js. Menerapkan Google Sheets API untuk melakukan registrasi online. Berkolaborasi dengan para pemangku kepentingan untuk menentukan persyaratan dan jadwal proyek.",
   "projects": [
-      {
-        "title": "Knitting Machine Instant Efficientcy",
-        "description": "aplikasi ini berguna untuk memantau efisiensi mesin rajut bundar dengan RPM ke persen dan menit berdasarkan jam kerja.",
-        "technologies": ["Flutter", "Android Studio"]
-      },
+    {
+      "title": "Knitting Machine Instant Efficientcy",
+      "description": "aplikasi ini berguna untuk memantau efisiensi mesin rajut bundar dengan RPM ke persen dan menit berdasarkan jam kerja.",
+      "technologies": [
+        "Flutter",
+        "Android Studio"
+      ]
+    },
     {
       "title": "Web Officer Tracking",
       "description": "Aplikasi web untuk memantau kinerja seluruh officer secara realtime yang dapat diakses oleh pengguna melalui tautan khusus. Terintegrasi dengan Flutter WebView untuk mencegah penulisan ulang URL dan menyembunyikan alamat web dari pengguna. Sistem ini mencatat waktu aktivitas, mendukung operasi CRUD data, serta menyediakan fitur ekspor laporan ke dalam format Excel.",
@@ -32,23 +35,29 @@
         "Framer Motion"
       ]
     },
-{
-  "title": "Web Caffe Chocolatos Sumedang",
-  "description": "Website katalog menu caffe Chocolatos Sumedang yang dapat diakses dengan memindai QR Code unik di lokasi. Dirancang dengan identitas visual khas Chocolatos untuk menarik perhatian pelanggan, serta memungkinkan pengunjung melihat menu kapan saja dan di mana saja tanpa perlu menginstal aplikasi.",
-  "technologies": [
-    "React.js",
-    "Tailwindcss",
-    "Framer Motion"
-  ]
-},
-      {
-        "title": "Blogging Platform",
-        "description": "Platform untuk membuat dan menerbitkan postingan blog, dengan fitur-fitur seperti pengeditan teks yang kaya, komentar, dan profil pengguna.",
-        "technologies": ["HTML", "CSS", "Vue.js", "Express", "mySQL"]
-      }
-    ],
-    "Projects": "Proyek",
-    "GetInTouch": "Hubungi",
-    "address": "Kota Cimahi, Jawa Barat, Indonesia ",
-    "ToTop": "↑ Keatas"
-}  
+    {
+      "title": "Web Caffe Chocolatos Sumedang",
+      "description": "Website katalog menu caffe Chocolatos Sumedang yang dapat diakses dengan memindai QR Code unik di lokasi. Dirancang dengan identitas visual khas Chocolatos untuk menarik perhatian pelanggan, serta memungkinkan pengunjung melihat menu kapan saja dan di mana saja tanpa perlu menginstal aplikasi.",
+      "technologies": [
+        "React.js",
+        "Tailwindcss",
+        "Framer Motion"
+      ]
+    },
+    {
+      "title": "Blogging Platform",
+      "description": "Platform untuk membuat dan menerbitkan postingan blog, dengan fitur-fitur seperti pengeditan teks yang kaya, komentar, dan profil pengguna.",
+      "technologies": [
+        "HTML",
+        "CSS",
+        "Vue.js",
+        "Express",
+        "mySQL"
+      ]
+    }
+  ],
+  "Projects": "Proyek",
+  "GetInTouch": "Hubungi",
+  "address": "Kota Cimahi, Jawa Barat, Indonesia ",
+  "ToTop": "↑ Keatas"
+}
