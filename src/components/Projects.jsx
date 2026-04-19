@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 import { useTranslation } from "react-i18next";
 import { PROJECTS } from "../locales";
 
@@ -7,59 +7,58 @@ const Projects = () => {
   const projects = t("projects", { returnObjects: true });
 
   return (
-    <div className="border-b border-neutral-900 pb-4">
+    <div id="projects" className="py-20">
       <motion.h2
         whileInView={{ opacity: 1, y: 0 }}
-        initial={{ opacity: 0, y: -100 }}
-        transition={{ duration: 0.5 }}
-        className="my-20 text-3xl md:text-4xl text-center"
+        initial={{ opacity: 0, y: -30 }}
+        transition={{ duration: 0.6 }}
+        viewport={{ once: true }}
+        className="section-heading mb-16"
       >
-        {t("Projects")}
+        <span className="text-gradient">{t("Projects")}</span>
       </motion.h2>
-      <div className="flex flex-wrap justify-center gap-8">
+
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
         {projects.map((project, index) => (
-          <div
+          <motion.div
             key={index}
-            className={`flex w-full lg:w-3/4 ${
-              index % 2 === 0 ? "lg:flex-row" : "lg:flex-row-reverse"
-            } items-center mb-8`}
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: index * 0.1 }}
+            viewport={{ once: true }}
+            className="group"
           >
-            <motion.div
-              whileInView={{ opacity: 1, x: 0 }}
-              initial={{ opacity: 0, x: index % 2 === 0 ? -100 : 100 }}
-              transition={{ duration: 0.5 }}
-              className="w-full lg:w-1/4 flex justify-center p-5"
-            >
-              <img
-                src={PROJECTS[index].image}
-                alt={PROJECTS[index].title}
-                width={150}
-                height={150}
-                className="rounded mb-6"
-              />
-            </motion.div>
-            <motion.div
-              whileInView={{ opacity: 1, x: 0 }}
-              initial={{ opacity: 0, x: index % 2 === 0 ? 100 : -100 }}
-              transition={{ duration: 0.5 }}
-              className="w-full lg:w-3/4"
-            >
-              <h6 className="font-semibold mb-2 text-md md:text-xl">{project.title}</h6>
-              <p className="mb-4 text-neutral-400 text-sm md:text-base">
-                {project.description}
-              </p>
-              <div className="flex flex-wrap gap-2">
-                {project.technologies.map((tech, techIndex) => (
-                  <span
-                    key={techIndex}
-                    className="rounded bg-neutral-900 px-2 py-1 text-xs md:text-sm font-medium text-purple-900"
-                  >
-                    {tech}
-                  </span>
-                ))}
+            <div className="glass-card rounded-2xl overflow-hidden h-full flex flex-col">
+              {/* Project Image */}
+              <div className="relative overflow-hidden aspect-video">
+                <img
+                  src={PROJECTS[index]?.image}
+                  alt={project.title}
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                />
+                {/* Hover overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0f] via-transparent to-transparent opacity-60" />
+                <div className="absolute inset-0 bg-violet-600/0 group-hover:bg-violet-600/10 transition-colors duration-500" />
               </div>
-            </motion.div>
-          </div>
+
+              {/* Content */}
+              <div className="p-6 flex flex-col flex-1">
+                <h3 className="text-lg font-semibold text-neutral-200 mb-2 group-hover:text-white transition-colors">
+                  {project.title}
+                </h3>
+                <p className="text-sm text-neutral-400 leading-relaxed mb-4 flex-1">
+                  {project.description}
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  {project.technologies.map((tech, techIndex) => (
+                    <span key={techIndex} className="tech-tag">
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </motion.div>
         ))}
       </div>
     </div>

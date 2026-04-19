@@ -1,70 +1,72 @@
 import { EXPERIENCES } from "../locales";
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 import { useTranslation } from "react-i18next";
 
 const Experience = () => {
   const { t } = useTranslation();
 
   return (
-    <div className="border-b border-neutral-900 pb-4">
+    <div id="experience" className="py-20">
       <motion.h2
         whileInView={{ opacity: 1, y: 0 }}
-        initial={{ opacity: 0, y: -100 }}
-        transition={{ duration: 0.5 }}
-        className="text-center text-4xl my-20"
+        initial={{ opacity: 0, y: -30 }}
+        transition={{ duration: 0.6 }}
+        viewport={{ once: true }}
+        className="section-heading mb-16"
       >
-        {t("Experience")}
+        <span className="text-gradient">{t("Experience")}</span>
       </motion.h2>
 
-      <div>
-        {EXPERIENCES.map((experience, index) => (
-          <div
-            key={index}
-            className="mb-10 flex flex-wrap lg:justify-center"
-          >
-            {/* YEAR */}
+      <div className="relative max-w-4xl mx-auto">
+        {/* Timeline Line — visible on lg only */}
+        <div className="hidden lg:block absolute left-8 top-0 bottom-0 w-[2px] bg-gradient-to-b from-violet-500/40 via-cyan-500/30 to-transparent" />
+
+        <div className="space-y-8">
+          {EXPERIENCES.map((experience, index) => (
             <motion.div
+              key={index}
+              initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
-              initial={{ opacity: 0, x: -100 }}
-              transition={{ duration: 1 }}
-              className="w-full lg:w-1/4"
+              transition={{ duration: 0.5, delay: index * 0.15 }}
+              viewport={{ once: true }}
+              className="relative flex gap-8"
             >
-              <p className="mb-2 text-sm text-neutral-400">
-                {experience.year}
-              </p>
-            </motion.div>
+              {/* Timeline dot — visible on lg only */}
+              <div className="hidden lg:flex flex-col items-center pt-8">
+                <div className="glow-dot flex-shrink-0" />
+              </div>
 
-            {/* CONTENT */}
-            <motion.div
-              whileInView={{ opacity: 1, x: 0 }}
-              initial={{ opacity: 0, x: 100 }}
-              transition={{ duration: 1 }}
-              className="w-full max-w-xl lg:w-3/4"
-            >
-              <h6 className="mb-2 font-semibold">
-                {experience.role}{" "}
-                <span className="text-sm text-purple-100">
-                  – {experience.company}
-                </span>
-              </h6>
-
-              <p className="mb-4 text-neutral-400">
-  {t(`experience.${experience.id}.description`)}
-</p>
-
-              <div className="flex flex-wrap">
-                {experience.technologies.map((tech, i) => (
-                  <span
-                    key={i}
-                    className="m-1 rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-purple-800"
-                  >
-                    {tech}
+              {/* Content Card */}
+              <div className="flex-1 glass-card rounded-2xl p-6 lg:p-8 group">
+                <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-2 mb-4">
+                  <div>
+                    <h3 className="text-lg font-semibold text-neutral-200 group-hover:text-white transition-colors">
+                      {experience.role}
+                    </h3>
+                    <p className="text-sm text-violet-400">
+                      {experience.company}
+                    </p>
+                  </div>
+                  <span className="text-sm text-neutral-500 lg:text-right whitespace-nowrap">
+                    {experience.year}
                   </span>
-                ))}
+                </div>
+
+                <p className="text-neutral-400 text-sm leading-relaxed mb-4">
+                  {t(`experience.${experience.id}.description`)}
+                </p>
+
+                <div className="flex flex-wrap gap-2">
+                  {experience.technologies.map((tech, i) => (
+                    <span key={i} className="tech-tag">
+                      {tech}
+                    </span>
+                  ))}
+                </div>
               </div>
             </motion.div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </div>
   );

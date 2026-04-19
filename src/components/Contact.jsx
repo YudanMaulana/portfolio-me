@@ -1,55 +1,103 @@
 import { CONTACT } from "../locales";
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 import { useTranslation } from "react-i18next";
+import { FaWhatsapp, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 
 const Contact = () => {
   const { t } = useTranslation();
 
   return (
-    <div className="border-b border-neutral-900 pb-20">
+    <div id="contact" className="py-20">
       <motion.h2
         whileInView={{ opacity: 1, y: 0 }}
-        initial={{ opacity: 0, y: -100 }}
-        transition={{ duration: 0.5 }}
-        className="my-10 text-center text-4xl"
+        initial={{ opacity: 0, y: -30 }}
+        transition={{ duration: 0.6 }}
+        viewport={{ once: true }}
+        className="section-heading mb-16"
       >
-        {t("GetInTouch")}
+        <span className="text-gradient">{t("GetInTouch")}</span>
       </motion.h2>
 
-      <div className="text-center tracking-tighter">
-        <motion.p
-          whileInView={{ opacity: 1, x: 0 }}
-          initial={{ opacity: 0, x: -100 }}
-          transition={{ duration: 1 }}
-          className="my-4 text-neutral-400"
-        >
-          {t("address")}
-        </motion.p>
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        viewport={{ once: true }}
+        className="max-w-2xl mx-auto"
+      >
+        <div className="glass-card rounded-3xl p-8 lg:p-12 gradient-border animated-gradient-border relative overflow-hidden">
+          {/* Decorative gradient mesh */}
+          <div className="absolute -top-20 -right-20 w-40 h-40 rounded-full bg-violet-600/10 blur-3xl" />
+          <div className="absolute -bottom-20 -left-20 w-40 h-40 rounded-full bg-cyan-500/10 blur-3xl" />
 
-        {/* WhatsApp Link */}
-        <motion.a
-          whileInView={{ opacity: 1, x: 0 }}
-          initial={{ opacity: 0, x: 100 }}
-          transition={{ duration: 1 }}
-          href={`https://wa.me/${CONTACT.whatsapp}`}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="my-4 block text-neutral-400 hover:text-green-500 transition"
-        >
-          {CONTACT.phoneNo}
-        </motion.a>
+          <div className="relative space-y-6">
+            {/* Address */}
+            <motion.div
+              whileInView={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, x: -30 }}
+              transition={{ duration: 0.5 }}
+              viewport={{ once: true }}
+              className="flex items-center gap-4 group"
+            >
+              <div className="flex-shrink-0 w-12 h-12 rounded-xl glass flex items-center justify-center group-hover:shadow-glow-sm transition-all duration-300">
+                <FaMapMarkerAlt className="text-violet-400 text-lg" />
+              </div>
+              <div>
+                <p className="text-xs text-neutral-500 uppercase tracking-wider mb-1">
+                  Location
+                </p>
+                <p className="text-neutral-300">{t("address")}</p>
+              </div>
+            </motion.div>
 
-        {/* Email */}
-        <motion.a
-          whileInView={{ opacity: 1 }}
-          initial={{ opacity: 0 }}
-          transition={{ duration: 1 }}
-          href={`mailto:${CONTACT.email}`}
-          className="border-b border-neutral-500 hover:border-neutral-300 transition"
-        >
-          {CONTACT.email}
-        </motion.a>
-      </div>
+            {/* WhatsApp */}
+            <motion.a
+              whileInView={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, x: -30 }}
+              transition={{ duration: 0.5, delay: 0.1 }}
+              viewport={{ once: true }}
+              href={`https://wa.me/${CONTACT.whatsapp}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-4 group cursor-pointer"
+            >
+              <div className="flex-shrink-0 w-12 h-12 rounded-xl glass flex items-center justify-center group-hover:shadow-[0_0_20px_rgba(37,211,102,0.3)] transition-all duration-300">
+                <FaWhatsapp className="text-green-400 text-lg group-hover:text-green-300 transition-colors" />
+              </div>
+              <div>
+                <p className="text-xs text-neutral-500 uppercase tracking-wider mb-1">
+                  WhatsApp
+                </p>
+                <p className="text-neutral-300 group-hover:text-green-400 transition-colors duration-300">
+                  {CONTACT.phoneNo}
+                </p>
+              </div>
+            </motion.a>
+
+            {/* Email */}
+            <motion.a
+              whileInView={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, x: -30 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              viewport={{ once: true }}
+              href={`mailto:${CONTACT.email}`}
+              className="flex items-center gap-4 group cursor-pointer"
+            >
+              <div className="flex-shrink-0 w-12 h-12 rounded-xl glass flex items-center justify-center group-hover:shadow-glow-sm transition-all duration-300">
+                <FaEnvelope className="text-violet-400 text-lg group-hover:text-violet-300 transition-colors" />
+              </div>
+              <div>
+                <p className="text-xs text-neutral-500 uppercase tracking-wider mb-1">
+                  Email
+                </p>
+                <p className="text-neutral-300 group-hover:text-violet-400 transition-colors duration-300">
+                  {CONTACT.email}
+                </p>
+              </div>
+            </motion.a>
+          </div>
+        </div>
+      </motion.div>
     </div>
   );
 };

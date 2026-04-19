@@ -2,54 +2,183 @@ import logo from "../assets/youlogo.png";
 import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
 import { SiBuymeacoffee } from "react-icons/si";
 import { useTranslation } from "react-i18next";
+import { motion } from "motion/react";
+import { useState, useEffect } from "react";
 import "../i18n";
 
+const navLinks = [
+  { key: "about", label: "About", href: "#about" },
+  { key: "technologies", label: "Technologies", href: "#technologies" },
+  { key: "experience", label: "Experience", href: "#experience" },
+  { key: "projects", label: "Projects", href: "#projects" },
+  { key: "contact", label: "GetInTouch", href: "#contact" },
+];
+
 const Navbar = () => {
-  const { i18n } = useTranslation();
+  const { i18n, t } = useTranslation();
+  const [scrolled, setScrolled] = useState(false);
+  const [mobileOpen, setMobileOpen] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 50);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const changeLanguage = (lang) => {
     i18n.changeLanguage(lang);
   };
 
   return (
-    <nav className="mb-20 flex items-center justify-between py-5">
-      <div className="flex flex-shrink-0 items-center">
-        <img src={logo} alt="logo" className="px-2" />
-      </div>
-      <div className="m-8 items-center justify-center flex gap-4 text-xl lg:text-2xl">
-        <a href="https://www.linkedin.com/in/yudanmaulana?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app " target="_blank" className="hover:text-sky-600">
-          <FaLinkedin />
+    <motion.nav
+      initial={{ y: -100, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ duration: 0.6, ease: "easeOut" }}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
+        scrolled
+          ? "glass-strong shadow-lg shadow-black/20 py-3"
+          : "bg-transparent py-5"
+      }`}
+    >
+      <div className="container mx-auto px-6 lg:px-16 max-w-7xl flex items-center justify-between">
+        {/* Logo */}
+        <a href="#" className="flex items-center gap-2 group">
+          <img
+            src={logo}
+            alt="Yudan Maulana logo"
+            className="w-8 h-8 transition-transform duration-300 group-hover:scale-110"
+          />
         </a>
-        <a href="https://github.com/YudanMaulana" target="_blank" className="hover:text-white hover:bg-transparent">
-          <FaGithub />
-        </a>
-        <a href="https://buymeacoffee.com/yudanmaulana" target="_blank" className="hover:text-yellow-400">
-          <SiBuymeacoffee />
-        </a>
-        <a href="https://www.instagram.com/yudan_maulana21?igsh=MTg2NjhwbnZxZnl1Ng==" target="_blank" className="hover:text-pink-800">
-          <FaInstagram />
-        </a>
-        <div className="flex items-center gap-2 text-sm">
+
+        {/* Desktop Nav Links */}
+        <div className="hidden lg:flex items-center gap-8">
+          {navLinks.map((link) => (
+            <a
+              key={link.key}
+              href={link.href}
+              className="text-sm text-neutral-400 hover:text-white transition-colors duration-300 relative group"
+            >
+              {t(link.label)}
+              <span className="absolute -bottom-1 left-0 w-0 h-[2px] bg-gradient-to-r from-violet-500 to-cyan-400 group-hover:w-full transition-all duration-300" />
+            </a>
+          ))}
+        </div>
+
+        {/* Right side: social + language */}
+        <div className="flex items-center gap-4">
+          {/* Social Icons */}
+          <div className="hidden md:flex items-center gap-3 text-lg">
+            <a
+              href="https://www.linkedin.com/in/yudanmaulana"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-neutral-500 hover:text-[#0077b5] transition-all duration-300 hover:scale-110 hover:drop-shadow-[0_0_8px_rgba(0,119,181,0.5)]"
+              aria-label="LinkedIn"
+            >
+              <FaLinkedin />
+            </a>
+            <a
+              href="https://github.com/YudanMaulana"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-neutral-500 hover:text-white transition-all duration-300 hover:scale-110 hover:drop-shadow-[0_0_8px_rgba(255,255,255,0.4)]"
+              aria-label="GitHub"
+            >
+              <FaGithub />
+            </a>
+            <a
+              href="https://buymeacoffee.com/yudanmaulana"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-neutral-500 hover:text-[#ffdd00] transition-all duration-300 hover:scale-110 hover:drop-shadow-[0_0_8px_rgba(255,221,0,0.5)]"
+              aria-label="Buy Me a Coffee"
+            >
+              <SiBuymeacoffee />
+            </a>
+            <a
+              href="https://www.instagram.com/yudan_maulana21"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-neutral-500 hover:text-[#e4405f] transition-all duration-300 hover:scale-110 hover:drop-shadow-[0_0_8px_rgba(228,64,95,0.5)]"
+              aria-label="Instagram"
+            >
+              <FaInstagram />
+            </a>
+          </div>
+
+          {/* Language Switcher — Pill Toggle */}
+          <div className="flex items-center rounded-full glass p-0.5 gap-0.5">
+            <button
+              onClick={() => changeLanguage("en")}
+              className={`px-3 py-1 text-xs font-medium rounded-full transition-all duration-300 cursor-pointer ${
+                i18n.language === "en"
+                  ? "bg-violet-600/80 text-white shadow-glow-sm"
+                  : "text-neutral-400 hover:text-neutral-200"
+              }`}
+            >
+              EN
+            </button>
+            <button
+              onClick={() => changeLanguage("id")}
+              className={`px-3 py-1 text-xs font-medium rounded-full transition-all duration-300 cursor-pointer ${
+                i18n.language === "id"
+                  ? "bg-violet-600/80 text-white shadow-glow-sm"
+                  : "text-neutral-400 hover:text-neutral-200"
+              }`}
+            >
+              ID
+            </button>
+          </div>
+
+          {/* Mobile Hamburger */}
           <button
-            onClick={() => changeLanguage("en")}
-            className={`${
-              i18n.language === "en" ? "font-bold underline" : "hover:text-gray-400"
-            }`}
+            className="lg:hidden flex flex-col gap-1.5 p-2 cursor-pointer"
+            onClick={() => setMobileOpen(!mobileOpen)}
+            aria-label="Toggle menu"
           >
-            EN
-          </button>
-          <span>|</span>
-          <button
-            onClick={() => changeLanguage("id")}
-            className={`${
-              i18n.language === "id" ? "font-bold underline" : "hover:text-gray-400"
-            }`}
-          >
-            ID
+            <span className={`w-5 h-0.5 bg-neutral-300 transition-all duration-300 ${mobileOpen ? 'rotate-45 translate-y-2' : ''}`} />
+            <span className={`w-5 h-0.5 bg-neutral-300 transition-all duration-300 ${mobileOpen ? 'opacity-0' : ''}`} />
+            <span className={`w-5 h-0.5 bg-neutral-300 transition-all duration-300 ${mobileOpen ? '-rotate-45 -translate-y-2' : ''}`} />
           </button>
         </div>
       </div>
-    </nav>
+
+      {/* Mobile Menu */}
+      {mobileOpen && (
+        <motion.div
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          className="lg:hidden glass-strong mt-2 mx-4 rounded-2xl p-6 flex flex-col gap-4"
+        >
+          {navLinks.map((link) => (
+            <a
+              key={link.key}
+              href={link.href}
+              onClick={() => setMobileOpen(false)}
+              className="text-sm text-neutral-300 hover:text-white transition-colors py-2"
+            >
+              {t(link.label)}
+            </a>
+          ))}
+          <div className="flex items-center gap-3 pt-4 border-t border-neutral-800/50 text-lg">
+            <a href="https://www.linkedin.com/in/yudanmaulana" target="_blank" rel="noopener noreferrer" className="text-neutral-500 hover:text-[#0077b5] transition-colors">
+              <FaLinkedin />
+            </a>
+            <a href="https://github.com/YudanMaulana" target="_blank" rel="noopener noreferrer" className="text-neutral-500 hover:text-white transition-colors">
+              <FaGithub />
+            </a>
+            <a href="https://buymeacoffee.com/yudanmaulana" target="_blank" rel="noopener noreferrer" className="text-neutral-500 hover:text-[#ffdd00] transition-colors">
+              <SiBuymeacoffee />
+            </a>
+            <a href="https://www.instagram.com/yudan_maulana21" target="_blank" rel="noopener noreferrer" className="text-neutral-500 hover:text-[#e4405f] transition-colors">
+              <FaInstagram />
+            </a>
+          </div>
+        </motion.div>
+      )}
+    </motion.nav>
   );
 };
 
