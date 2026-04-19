@@ -1,4 +1,4 @@
-import logo from "../assets/youlogo.png";
+import logo from "../assets/logo_white_raven.png";
 import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
 import { SiBuymeacoffee } from "react-icons/si";
 import { useTranslation } from "react-i18next";
@@ -48,7 +48,7 @@ const Navbar = () => {
           <img
             src={logo}
             alt="Yudan Maulana logo"
-            className="w-7 h-7 lg:w-8 lg:h-8 transition-transform duration-300 group-hover:scale-110"
+            className="w-7 h-7 lg:w-8 lg:h-8 object-cover aspect-square transition-transform duration-300 group-hover:scale-110"
           />
         </a>
 

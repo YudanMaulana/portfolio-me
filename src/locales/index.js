@@ -47,5 +47,5 @@ export const PROJECTS = [
 export const CONTACT = {
   phoneNo: "+62 898-9244-418",
   whatsapp: "628989244418",
-  email: "yudanmaulana21@gmail.com",
+  email: "yudanworkspace@gmail.com",
 };
