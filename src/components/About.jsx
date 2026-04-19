@@ -6,7 +6,7 @@ const About = () => {
   const { t } = useTranslation();
 
   return (
-    <div id="about" className="py-12 lg:py-20">
+    <div id="about" className="py-16 lg:py-24 scroll-mt-24">
       {/* Section Heading */}
       <motion.h2
         whileInView={{ opacity: 1, y: 0 }}

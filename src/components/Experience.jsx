@@ -6,7 +6,7 @@ const Experience = () => {
   const { t } = useTranslation();
 
   return (
-    <div id="experience" className="py-12 lg:py-20">
+    <div id="experience" className="py-16 lg:py-24 scroll-mt-24">
       <motion.h2
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -30 }}

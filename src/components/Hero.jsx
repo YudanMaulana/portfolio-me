@@ -51,7 +51,7 @@ function Hero() {
               variants={container(0.6)}
               initial="hidden"
               animate="visible"
-              className="max-w-lg py-3 lg:py-4 text-sm lg:text-base leading-relaxed text-neutral-400 line-clamp-4 lg:line-clamp-none"
+              className="max-w-lg py-3 lg:py-4 text-sm lg:text-base leading-relaxed text-neutral-400"
             >
               {t("HERO_CONTENT")}
             </motion.p>

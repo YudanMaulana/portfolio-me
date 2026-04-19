@@ -7,7 +7,7 @@ const Projects = () => {
   const projects = t("projects", { returnObjects: true });
 
   return (
-    <div id="projects" className="py-12 lg:py-20">
+    <div id="projects" className="py-16 lg:py-24 scroll-mt-24">
       <motion.h2
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -30 }}
