@@ -51,7 +51,7 @@ const App = () => {
       />
 
       {/* Animated Background */}
-      <div className="fixed inset-0 -z-10 bg-[#0a0a0f]">
+      <div className="fixed inset-0 -z-10 bg-[#0a0a0f] overflow-hidden">
         {/* Mesh gradient orbs */}
         <div className="bg-orb bg-orb-1" />
         <div className="bg-orb bg-orb-2" />
@@ -72,7 +72,7 @@ const App = () => {
         />
       </div>
 
-      <div className="container mx-auto px-6 lg:px-16 max-w-7xl">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-16 max-w-7xl">
         <Navbar />
         <Hero />
         <About />
@@ -96,7 +96,8 @@ const App = () => {
             exit={{ opacity: 0, scale: 0.5, y: 20 }}
             transition={{ duration: 0.3 }}
             onClick={scrollToTop}
-            className="fixed bottom-8 right-8 z-50 p-3 rounded-full glass-strong shadow-glow hover:shadow-glow-lg transition-all duration-300 group cursor-pointer"
+            id="back-to-top"
+            className="fixed bottom-6 right-4 lg:bottom-8 lg:right-8 z-50 p-2.5 lg:p-3 rounded-full glass-strong shadow-glow hover:shadow-glow-lg transition-all duration-300 group cursor-pointer"
             aria-label={t("ToTop")}
           >
             <FaArrowUp className="text-violet-400 group-hover:text-violet-300 transition-colors" />

@@ -7,13 +7,13 @@ const Contact = () => {
   const { t } = useTranslation();
 
   return (
-    <div id="contact" className="py-20">
+    <div id="contact" className="py-12 lg:py-20">
       <motion.h2
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -30 }}
         transition={{ duration: 0.6 }}
         viewport={{ once: true }}
-        className="section-heading mb-16"
+        className="section-heading mb-10 lg:mb-16 text-3xl lg:text-5xl"
       >
         <span className="text-gradient">{t("GetInTouch")}</span>
       </motion.h2>
@@ -25,28 +25,28 @@ const Contact = () => {
         viewport={{ once: true }}
         className="max-w-2xl mx-auto"
       >
-        <div className="glass-card rounded-3xl p-8 lg:p-12 gradient-border animated-gradient-border relative overflow-hidden">
+        <div className="glass-card rounded-2xl lg:rounded-3xl p-6 lg:p-12 gradient-border animated-gradient-border relative overflow-hidden">
           {/* Decorative gradient mesh */}
           <div className="absolute -top-20 -right-20 w-40 h-40 rounded-full bg-violet-600/10 blur-3xl" />
           <div className="absolute -bottom-20 -left-20 w-40 h-40 rounded-full bg-cyan-500/10 blur-3xl" />
 
-          <div className="relative space-y-6">
+          <div className="relative space-y-5 lg:space-y-6">
             {/* Address */}
             <motion.div
               whileInView={{ opacity: 1, x: 0 }}
               initial={{ opacity: 0, x: -30 }}
               transition={{ duration: 0.5 }}
               viewport={{ once: true }}
-              className="flex items-center gap-4 group"
+              className="flex items-center gap-3 lg:gap-4 group"
             >
-              <div className="flex-shrink-0 w-12 h-12 rounded-xl glass flex items-center justify-center group-hover:shadow-glow-sm transition-all duration-300">
-                <FaMapMarkerAlt className="text-violet-400 text-lg" />
+              <div className="flex-shrink-0 w-10 h-10 lg:w-12 lg:h-12 rounded-lg lg:rounded-xl glass flex items-center justify-center group-hover:shadow-glow-sm transition-all duration-300">
+                <FaMapMarkerAlt className="text-violet-400 text-sm lg:text-lg" />
               </div>
-              <div>
-                <p className="text-xs text-neutral-500 uppercase tracking-wider mb-1">
+              <div className="min-w-0">
+                <p className="text-[10px] lg:text-xs text-neutral-500 uppercase tracking-wider mb-0.5 lg:mb-1">
                   Location
                 </p>
-                <p className="text-neutral-300">{t("address")}</p>
+                <p className="text-sm lg:text-base text-neutral-300 truncate">{t("address")}</p>
               </div>
             </motion.div>
 
@@ -59,16 +59,16 @@ const Contact = () => {
               href={`https://wa.me/${CONTACT.whatsapp}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-4 group cursor-pointer"
+              className="flex items-center gap-3 lg:gap-4 group cursor-pointer"
             >
-              <div className="flex-shrink-0 w-12 h-12 rounded-xl glass flex items-center justify-center group-hover:shadow-[0_0_20px_rgba(37,211,102,0.3)] transition-all duration-300">
-                <FaWhatsapp className="text-green-400 text-lg group-hover:text-green-300 transition-colors" />
+              <div className="flex-shrink-0 w-10 h-10 lg:w-12 lg:h-12 rounded-lg lg:rounded-xl glass flex items-center justify-center group-hover:shadow-[0_0_20px_rgba(37,211,102,0.3)] transition-all duration-300">
+                <FaWhatsapp className="text-green-400 text-sm lg:text-lg group-hover:text-green-300 transition-colors" />
               </div>
-              <div>
-                <p className="text-xs text-neutral-500 uppercase tracking-wider mb-1">
+              <div className="min-w-0">
+                <p className="text-[10px] lg:text-xs text-neutral-500 uppercase tracking-wider mb-0.5 lg:mb-1">
                   WhatsApp
                 </p>
-                <p className="text-neutral-300 group-hover:text-green-400 transition-colors duration-300">
+                <p className="text-sm lg:text-base text-neutral-300 group-hover:text-green-400 transition-colors duration-300">
                   {CONTACT.phoneNo}
                 </p>
               </div>
@@ -81,16 +81,16 @@ const Contact = () => {
               transition={{ duration: 0.5, delay: 0.2 }}
               viewport={{ once: true }}
               href={`mailto:${CONTACT.email}`}
-              className="flex items-center gap-4 group cursor-pointer"
+              className="flex items-center gap-3 lg:gap-4 group cursor-pointer"
             >
-              <div className="flex-shrink-0 w-12 h-12 rounded-xl glass flex items-center justify-center group-hover:shadow-glow-sm transition-all duration-300">
-                <FaEnvelope className="text-violet-400 text-lg group-hover:text-violet-300 transition-colors" />
+              <div className="flex-shrink-0 w-10 h-10 lg:w-12 lg:h-12 rounded-lg lg:rounded-xl glass flex items-center justify-center group-hover:shadow-glow-sm transition-all duration-300">
+                <FaEnvelope className="text-violet-400 text-sm lg:text-lg group-hover:text-violet-300 transition-colors" />
               </div>
-              <div>
-                <p className="text-xs text-neutral-500 uppercase tracking-wider mb-1">
+              <div className="min-w-0">
+                <p className="text-[10px] lg:text-xs text-neutral-500 uppercase tracking-wider mb-0.5 lg:mb-1">
                   Email
                 </p>
-                <p className="text-neutral-300 group-hover:text-violet-400 transition-colors duration-300">
+                <p className="text-sm lg:text-base text-neutral-300 group-hover:text-violet-400 transition-colors duration-300 truncate">
                   {CONTACT.email}
                 </p>
               </div>

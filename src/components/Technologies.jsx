@@ -50,18 +50,18 @@ const Technologies = () => {
   const { t } = useTranslation();
 
   return (
-    <div id="technologies" className="py-20">
+    <div id="technologies" className="py-12 lg:py-20">
       <motion.h2
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -30 }}
         transition={{ duration: 0.6 }}
         viewport={{ once: true }}
-        className="section-heading mb-16"
+        className="section-heading mb-10 lg:mb-16 text-3xl lg:text-5xl"
       >
         <span className="text-gradient">{t("Technologies")}</span>
       </motion.h2>
 
-      <div className="flex flex-wrap items-center justify-center gap-6 lg:gap-8">
+      <div className="grid grid-cols-3 md:grid-cols-6 gap-3 lg:gap-6 max-w-3xl mx-auto">
         {technologies.map((tech, index) => (
           <motion.div
             key={tech.name}
@@ -73,10 +73,7 @@ const Technologies = () => {
             className="group"
           >
             <div
-              className="glass-card rounded-2xl p-6 flex flex-col items-center gap-3 cursor-default transition-all duration-400"
-              style={{
-                "--hover-shadow": tech.shadowColor,
-              }}
+              className="glass-card rounded-xl lg:rounded-2xl p-3 lg:p-6 flex flex-col items-center gap-2 lg:gap-3 cursor-default transition-all duration-400"
               onMouseEnter={(e) => {
                 e.currentTarget.style.boxShadow = `0 0 30px ${tech.shadowColor}`;
                 e.currentTarget.style.borderColor = `${tech.color}33`;
@@ -87,10 +84,10 @@ const Technologies = () => {
               }}
             >
               <tech.icon
-                className="text-5xl lg:text-6xl transition-all duration-300 group-hover:scale-110"
+                className="text-3xl lg:text-6xl transition-all duration-300 group-hover:scale-110"
                 style={{ color: tech.color }}
               />
-              <span className="text-xs font-medium text-neutral-500 group-hover:text-neutral-300 transition-colors duration-300">
+              <span className="text-[10px] lg:text-xs font-medium text-neutral-500 group-hover:text-neutral-300 transition-colors duration-300">
                 {tech.name}
               </span>
             </div>
