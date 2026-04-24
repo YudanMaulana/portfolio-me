@@ -45,14 +45,16 @@
       ]
     },
     {
-      "title": "Blogging Platform",
-      "description": "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
+      "title": "Garudafood FaceGuard",
+      "description": "A face-recognition visitor management system that combines a Flutter Windows desktop app for check-in/check-out scanning, a React web form opened from unique QR links, Firestore, digital signatures, and PDF/Excel exports.",
       "technologies": [
-        "HTML",
-        "CSS",
-        "Vue.js",
-        "Express",
-        "mySQL"
+        "Flutter Desktop",
+        "React.js",
+        "Vite",
+        "Firebase",
+        "Firestore",
+        "OpenCV",
+        "QR Code"
       ]
     }
   ],
