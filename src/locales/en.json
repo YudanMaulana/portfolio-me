@@ -56,6 +56,19 @@
         "OpenCV",
         "QR Code"
       ]
+    },
+    {
+      "title": "E-Patrol Garudafood",
+      "description": "A security patrol system that combines a Flutter mobile app for GPS-based location check-ins, field photo evidence, device security validation, and patrol area management with a React web dashboard for monitoring patrol history and exporting Excel reports through Supabase.",
+      "technologies": [
+        "Flutter",
+        "React.js",
+        "Vite",
+        "Supabase",
+        "Geolocator",
+        "Excel Export",
+        "Android"
+      ]
     }
   ],
   "Projects": "Projects",

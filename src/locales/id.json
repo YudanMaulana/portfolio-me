@@ -56,6 +56,19 @@
         "OpenCV",
         "QR Code"
       ]
+    },
+    {
+      "title": "E-Patrol Garudafood",
+      "description": "Aplikasi patroli keamanan yang menggabungkan mobile app Flutter untuk check-in lokasi berbasis GPS, foto bukti lapangan, validasi keamanan perangkat, pengelolaan area patroli, serta dashboard web React untuk monitoring riwayat patroli dan ekspor laporan Excel melalui Supabase.",
+      "technologies": [
+        "Flutter",
+        "React.js",
+        "Vite",
+        "Supabase",
+        "Geolocator",
+        "Excel Export",
+        "Android"
+      ]
     }
   ],
   "Projects": "Proyek",
