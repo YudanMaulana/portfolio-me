@@ -1,4 +1,4 @@
-import profilePic from "../assets/yudanMaulanaProfile.png";
+import profilePic from "../assets/yudanMaulanaProfile.webp";
 import { motion } from "motion/react";
 import { useTranslation } from "react-i18next";
 import { FaDownload, FaEnvelope } from "react-icons/fa";
