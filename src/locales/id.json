@@ -58,13 +58,15 @@
       ]
     },
     {
-      "title": "E-Patrol Garudafood",
-      "description": "Aplikasi patroli keamanan yang menggabungkan mobile app Flutter untuk check-in lokasi berbasis GPS, foto bukti lapangan, validasi keamanan perangkat, pengelolaan area patroli, serta dashboard web React untuk monitoring riwayat patroli dan ekspor laporan Excel melalui Supabase.",
+      "title": "GARUDA SHIELD E-PATROL",
+      "description": "Platform patroli keamanan yang menggabungkan mobile app Flutter untuk check-in lokasi berbasis GPS, foto bukti lapangan, alur patroli berbasis shift, dan manajemen akun, serta dashboard admin React untuk monitoring riwayat patroli, peninjauan arsip storage, pengelolaan lokasi, dan ekspor laporan operasional melalui Firebase.",
       "technologies": [
         "Flutter",
         "React.js",
         "Vite",
-        "Supabase",
+        "Firebase",
+        "Firestore",
+        "Firebase Storage",
         "Geolocator",
         "Excel Export",
         "Android"

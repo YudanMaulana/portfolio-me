@@ -58,13 +58,15 @@
       ]
     },
     {
-      "title": "E-Patrol Garudafood",
-      "description": "A security patrol system that combines a Flutter mobile app for GPS-based location check-ins, field photo evidence, device security validation, and patrol area management with a React web dashboard for monitoring patrol history and exporting Excel reports through Supabase.",
+      "title": "GARUDA SHIELD E-PATROL",
+      "description": "A security patrol platform that combines a Flutter mobile app for GPS-based location check-ins, field photo evidence, shift-based patrol workflows, and account management with a React admin dashboard for monitoring patrol history, reviewing storage archives, managing locations, and exporting operational reports through Firebase.",
       "technologies": [
         "Flutter",
         "React.js",
         "Vite",
-        "Supabase",
+        "Firebase",
+        "Firestore",
+        "Firebase Storage",
         "Geolocator",
         "Excel Export",
         "Android"
