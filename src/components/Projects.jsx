@@ -39,6 +39,15 @@ const Projects = () => {
                 {/* Overlay */}
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0f] via-transparent to-transparent opacity-60" />
                 <div className="absolute inset-0 bg-violet-600/0 group-hover:bg-violet-600/10 transition-colors duration-500" />
+                
+                {/* Status Label */}
+                {project.status && (
+                  <div className="absolute top-3 right-3 lg:top-4 lg:right-4 z-10">
+                    <span className={`px-2.5 py-1 text-[10px] lg:text-xs font-bold rounded-full ${project.status === 'STABLE' ? 'bg-emerald-500/20 text-emerald-300 border border-emerald-500/30' : 'bg-amber-500/20 text-amber-300 border border-amber-500/30'} backdrop-blur-md shadow-lg`}>
+                      {project.status}
+                    </span>
+                  </div>
+                )}
               </div>
 
               {/* Content */}

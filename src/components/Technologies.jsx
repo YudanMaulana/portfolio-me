@@ -1,9 +1,9 @@
 import { RiReactjsLine } from "react-icons/ri";
-import { TbBrandNextjs } from "react-icons/tb";
 import { FaFlutter } from "react-icons/fa6";
 import { FaUbuntu } from "react-icons/fa";
 import { FaNodeJs } from "react-icons/fa";
 import { RiTailwindCssFill } from "react-icons/ri";
+import { SiGooglegemini, SiOllama, SiNgrok } from "react-icons/si";
 import { motion } from "motion/react";
 import { useTranslation } from "react-i18next";
 
@@ -15,8 +15,8 @@ const technologies = [
     shadowColor: "rgba(97, 218, 251, 0.3)",
   },
   {
-    icon: TbBrandNextjs,
-    name: "Next.js",
+    icon: SiOllama,
+    name: "Ollama",
     color: "#ffffff",
     shadowColor: "rgba(255, 255, 255, 0.2)",
   },
@@ -43,6 +43,18 @@ const technologies = [
     name: "Tailwind",
     color: "#06b6d4",
     shadowColor: "rgba(6, 182, 212, 0.3)",
+  },
+  {
+    icon: SiGooglegemini,
+    name: "AI Studio",
+    color: "#4285F4",
+    shadowColor: "rgba(66, 133, 244, 0.3)",
+  },
+  {
+    icon: SiNgrok,
+    name: "Ngrok",
+    color: "#ffffff",
+    shadowColor: "rgba(255, 255, 255, 0.2)",
   },
 ];
 

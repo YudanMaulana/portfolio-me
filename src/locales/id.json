@@ -1,9 +1,9 @@
 {
-  "HERO_CONTENT": "Pengembangan full stack dengan Flutter merupakan bidang yang dinamis dan berfokus pada pembuatan aplikasi yang serbaguna dan fungsional. Bidang ini membutuhkan perpaduan keterampilan dalam teknologi front-end seperti Dart dan Widgets, yang dipadukan dengan keahlian dalam sistem back-end seperti Firebase serta basis data seperti Supabase atau PostgreSQL. Dengan pengalaman praktis, para pengembang menciptakan solusi yang skalabel dan efisien untuk memenuhi kebutuhan bisnis sekaligus meningkatkan pengalaman pengguna di platform seluler, web, dan desktop. Tujuan utamanya adalah membangun perangkat lunak yang tidak hanya memenuhi persyaratan teknis, tetapi juga mendorong pertumbuhan dan memberikan nilai tambah bagi pengguna.",
-  "title": "Full-Stack Developer",
+  "HERO_CONTENT": "Pengembangan full stack dan AI Engineering merupakan bidang dinamis yang berfokus pada pembuatan aplikasi yang serbaguna, cerdas, dan fungsional. Bidang ini membutuhkan perpaduan keterampilan dalam teknologi front-end seperti Dart dan React, yang dipadukan dengan keahlian dalam sistem back-end, basis data, dan model AI. Dengan pengalaman praktis, saya menciptakan solusi full-stack efisien yang diperkuat dengan Kecerdasan Buatan (AI) untuk memenuhi kebutuhan bisnis sekaligus meningkatkan pengalaman pengguna di platform seluler, web, maupun desktop.",
+  "title": "Full-Stack Developer & AI Engineer",
   "about": "Tentang ",
   "me": "Saya",
-  "ABOUT_TEXT": "Saya adalah seorang Pengembang Full Stack Flutter yang berdedikasi dan serba bisa, dengan minat yang besar dalam membangun aplikasi yang tangguh dan lintas platform. Dengan pengalaman profesional di bidang Dukungan TI dan Pengembangan, saya telah bekerja dengan berbagai teknologi, termasuk Dart, React, serta platform cloud seperti Firebase dan Supabase. Perjalanan saya di bidang rekayasa perangkat lunak bermula dari rasa ingin tahu yang mendalam tentang cara kerja berbagai hal, dan telah berkembang menjadi karier di mana saya terus berupaya untuk belajar dan beradaptasi dengan tantangan baru. Saya berkembang dalam lingkungan kolaboratif dan menikmati memecahkan masalah kompleks untuk menghasilkan solusi berkualitas tinggi. Di luar kegiatan coding, saya senang tetap aktif, menjelajahi teknologi baru, dan berkontribusi pada proyek-proyek open-source.",
+  "ABOUT_TEXT": "Saya adalah seorang Pengembang Full Stack & AI Engineer yang berdedikasi dan serba bisa, dengan minat yang besar dalam membangun aplikasi yang tangguh dan lintas platform. Sebagai ahli AI Engineer, saya berspesialisasi dalam membangun aplikasi full-stack yang cerdas. Dengan pengalaman profesional di bidang Dukungan TI dan Pengembangan, saya telah bekerja dengan berbagai teknologi, termasuk Dart, React, serta platform cloud seperti Firebase dan Supabase. Perjalanan saya di bidang rekayasa perangkat lunak bermula dari rasa ingin tahu yang mendalam tentang cara kerja berbagai hal, dan telah berkembang menjadi karier di mana saya terus berupaya untuk belajar dan beradaptasi dengan tantangan baru. Saya berkembang dalam lingkungan kolaboratif dan menikmati memecahkan masalah kompleks untuk menghasilkan solusi berkualitas tinggi. Di luar kegiatan coding, saya senang tetap aktif, menjelajahi teknologi baru, dan berkontribusi pada proyek-proyek open-source.",
   "Technologies": "Teknologi",
   "Experience": "Pengalaman",
   "experience": {
@@ -19,6 +19,7 @@
     {
       "title": "Knitting Machine Instant Efficientcy",
       "description": "aplikasi ini berguna untuk memantau efisiensi mesin rajut bundar dengan RPM ke persen dan menit berdasarkan jam kerja.",
+      "status": "STABLE",
       "technologies": [
         "Flutter",
         "Android Studio"
@@ -27,6 +28,7 @@
     {
       "title": "Web Officer Tracking",
       "description": "Aplikasi web untuk memantau kinerja seluruh officer secara realtime yang dapat diakses oleh pengguna melalui tautan khusus. Terintegrasi dengan Flutter WebView untuk mencegah penulisan ulang URL dan menyembunyikan alamat web dari pengguna. Sistem ini mencatat waktu aktivitas, mendukung operasi CRUD data, serta menyediakan fitur ekspor laporan ke dalam format Excel.",
+      "status": "STABLE",
       "technologies": [
         "React.js",
         "Flutter",
@@ -38,6 +40,7 @@
     {
       "title": "Web Caffe Chocolatos Sumedang",
       "description": "Website katalog menu caffe Chocolatos Sumedang yang dapat diakses dengan memindai QR Code unik di lokasi. Dirancang dengan identitas visual khas Chocolatos untuk menarik perhatian pelanggan, serta memungkinkan pengunjung melihat menu kapan saja dan di mana saja tanpa perlu menginstal aplikasi.",
+      "status": "STABLE",
       "technologies": [
         "React.js",
         "Tailwindcss",
@@ -45,8 +48,9 @@
       ]
     },
     {
-      "title": "Garudafood FaceGuard",
+      "title": "Garuda Shield Faceid",
       "description": "Sistem manajemen kunjungan berbasis face recognition yang menggabungkan aplikasi desktop Flutter Windows untuk scan check-in/check-out, web form React melalui QR unik, Firestore, tanda tangan digital, serta ekspor PDF dan Excel.",
+      "status": "STABLE",
       "technologies": [
         "Flutter Desktop",
         "React.js",
@@ -54,12 +58,14 @@
         "Firebase",
         "Firestore",
         "OpenCV",
+        "Arcface 512D",
         "QR Code"
       ]
     },
     {
       "title": "GARUDA SHIELD E-PATROL",
       "description": "Platform patroli keamanan yang menggabungkan mobile app Flutter untuk check-in lokasi berbasis GPS, foto bukti lapangan, alur patroli berbasis shift, dan manajemen akun, serta dashboard admin React untuk monitoring riwayat patroli, peninjauan arsip storage, pengelolaan lokasi, dan ekspor laporan operasional melalui Firebase.",
+      "status": "STABLE",
       "technologies": [
         "Flutter",
         "React.js",
@@ -73,13 +79,16 @@
       ]
     },
     {
-      "title": "Chocolatos X-Quest AI Chat",
-      "description": "Aplikasi pendamping seluler Captain Arion dan Captain Celestia untuk Chocolatos X-Quest. Menampilkan antarmuka obrolan AI yang didukung oleh Gemma 4 E2B + Ollama sebagai backend AI, lengkap dengan dukungan markdown, sinkronisasi data lokal, dan kemampuan pelaporan issue.",
+      "title": "Chocolatos X-Quest Agentic AI",
+      "description": "Aplikasi pendamping seluler Captain Arion dan Captain Celestia untuk Chocolatos X-Quest. Menampilkan antarmuka obrolan AI yang didukung oleh Gemma 4 E2B + Ollama sebagai backend AI, berjalan di server mandiri menggunakan RTX 3060 12GB dengan Ngrok. Dibangun menggunakan bahasa Python, aplikasi ini dilengkapi dengan dukungan markdown, sinkronisasi data lokal, kemampuan pelaporan issue, serta fitur pemindaian rekaman CCTV.",
+      "status": "On PROGRESS",
       "technologies": [
         "Flutter",
         "Dart",
         "Gemma 4 E2B",
-        "Ollama"
+        "Ollama",
+        "Python",
+        "Ngrok"
       ]
     }
   ],

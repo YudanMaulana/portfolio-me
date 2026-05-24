@@ -1,9 +1,9 @@
 {
-  "HERO_CONTENT": "Full stack development with Flutter is a dynamic field focused on creating versatile and functional applications. It requires a blend of skills in front-end technologies such as Dart and Widgets, combined with expertise in back-end systems like Firebase and databases like Supabase or PostgreSQL. With hands-on experience, developers craft scalable and efficient solutions that cater to business needs while enhancing user experiences across mobile, web, and desktop. The ultimate goal is to build software that not only meets technical requirements but also drives growth and adds value to users.",
-  "title": "Full-Stack Developer",
+  "HERO_CONTENT": "Full stack development and AI Engineering are dynamic fields focused on creating versatile, intelligent, and functional applications. It requires a blend of skills in front-end technologies like Dart, React, and Widgets, combined with expertise in back-end systems, databases, and AI models. With hands-on experience, I craft scalable and efficient full-stack solutions infused with Artificial Intelligence that cater to business needs while enhancing user experiences across mobile, web, and desktop.",
+  "title": "Full-Stack Developer & AI Engineer",
   "about": "About ",
   "me": "Me",
-  "ABOUT_TEXT": "I am a dedicated and versatile Full Stack Flutter Developer with a passion for building robust and cross-platform applications. With professional experience in IT Support and Development, I have worked with a variety of technologies, including Dart, React, and cloud platforms like Firebase and Supabase. My journey in software engineering began with a deep curiosity for how things work, and it has evolved into a career where I continuously strive to learn and adapt to new challenges. I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions. Outside of coding, I enjoy staying active, exploring new technologies, and contributing to open-source projects.",
+  "ABOUT_TEXT": "I am a dedicated and versatile Full Stack Developer & AI Engineer with a passion for building robust and cross-platform applications. As an expert AI Engineer, I specialize in building intelligent full-stack applications. With professional experience in IT Support and Development, I have worked with a variety of technologies, including Dart, React, and cloud platforms like Firebase and Supabase. My journey in software engineering began with a deep curiosity for how things work, and it has evolved into a career where I continuously strive to learn and adapt to new challenges. I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions. Outside of coding, I enjoy staying active, exploring new technologies, and contributing to open-source projects.",
   "Technologies": "Technologies",
   "Experience": "Experience",
   "experience": {
@@ -19,6 +19,7 @@
     {
       "title": "Knitting Machine Instant Efficientcy",
       "description": "This application is useful for monitoring the efficiency of circular knitting machines with RPM to percent and minutes based on working hours.",
+      "status": "STABLE",
       "technologies": [
         "Flutter",
         "Android Studio"
@@ -27,6 +28,7 @@
     {
       "title": "Web Officer Tracking",
       "description": "A web application designed to monitor officer performance in real time, accessible via a shared link for authorized users. Integrated with Flutter WebView to prevent URL re-entry and hide the web address from users. The system records activity timing, supports full CRUD operations, and allows data export in Excel format.",
+      "status": "STABLE",
       "technologies": [
         "React.js",
         "Flutter",
@@ -38,6 +40,7 @@
     {
       "title": "Chocolatos Sumedang Café Website",
       "description": "A café menu website for Chocolatos Sumedang, accessible by scanning a unique QR Code at the location. Designed with Chocolatos’ distinctive visual identity to attract customers, allowing them to view the menu anytime and anywhere without installing any application.",
+      "status": "STABLE",
       "technologies": [
         "React.js",
         "Tailwindcss",
@@ -45,8 +48,9 @@
       ]
     },
     {
-      "title": "Garudafood FaceGuard",
+      "title": "Garuda Shield Faceid",
       "description": "A face-recognition visitor management system that combines a Flutter Windows desktop app for check-in/check-out scanning, a React web form opened from unique QR links, Firestore, digital signatures, and PDF/Excel exports.",
+      "status": "STABLE",
       "technologies": [
         "Flutter Desktop",
         "React.js",
@@ -54,12 +58,14 @@
         "Firebase",
         "Firestore",
         "OpenCV",
+        "Arcface 512D",
         "QR Code"
       ]
     },
     {
       "title": "GARUDA SHIELD E-PATROL",
       "description": "A security patrol platform that combines a Flutter mobile app for GPS-based location check-ins, field photo evidence, shift-based patrol workflows, and account management with a React admin dashboard for monitoring patrol history, reviewing storage archives, managing locations, and exporting operational reports through Firebase.",
+      "status": "STABLE",
       "technologies": [
         "Flutter",
         "React.js",
@@ -73,13 +79,16 @@
       ]
     },
     {
-      "title": "Chocolatos X-Quest AI Chat",
-      "description": "Captain Arion and Captain Celestia mobile companion app for Chocolatos X-Quest. An AI chat interface powered by Gemma 4 E2B + Ollama as the AI backend, featuring markdown support, local data synchronization, and issue tracking capabilities.",
+      "title": "Chocolatos X-Quest Agentic AI",
+      "description": "Captain Arion and Captain Celestia mobile companion app for Chocolatos X-Quest. An AI chat interface powered by Gemma 4 E2B + Ollama as the AI backend, running on a self-hosted server with an RTX 3060 12GB and exposed via Ngrok. Built using Python, it features markdown support, local data synchronization, issue tracking capabilities, and CCTV feed scanning.",
+      "status": "On PROGRESS",
       "technologies": [
         "Flutter",
         "Dart",
         "Gemma 4 E2B",
-        "Ollama"
+        "Ollama",
+        "Python",
+        "Ngrok"
       ]
     }
   ],
