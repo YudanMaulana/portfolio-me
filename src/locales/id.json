@@ -71,6 +71,16 @@
         "Excel Export",
         "Android"
       ]
+    },
+    {
+      "title": "Chocolatos X-Quest AI Chat",
+      "description": "Aplikasi pendamping seluler Captain Arion dan Captain Celestia untuk Chocolatos X-Quest. Menampilkan antarmuka obrolan AI yang didukung oleh Gemma 4 E2B + Ollama sebagai backend AI, lengkap dengan dukungan markdown, sinkronisasi data lokal, dan kemampuan pelaporan issue.",
+      "technologies": [
+        "Flutter",
+        "Dart",
+        "Gemma 4 E2B",
+        "Ollama"
+      ]
     }
   ],
   "Projects": "Proyek",
