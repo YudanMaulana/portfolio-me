@@ -90,6 +90,22 @@
         "Python",
         "Ngrok"
       ]
+    },
+    {
+      "title": "Garudashield Visit",
+      "description": "Ekosistem manajemen kunjungan dan kontrol akses terintegrasi berbasis AI Biometrik. Terdiri dari aplikasi Android (Flutter) untuk registrasi tamu via Google Sign-In & OTP, multi-angle face enrolment dengan Google ML Kit & analisis kualitas wajah real-time, kuis safety induction, serta tanda tangan digital. Didukung aplikasi Linux Desktop Gate (MediaPipe sidecar) untuk auto-identify di gerbang masuk, dan backend FastAPI bertenaga AI dengan YOLOv8-Face, ArcFace 512-D ONNX Runtime, serta pencocokan embedding toleran pose.",
+      "status": "STABLE",
+      "technologies": [
+        "Flutter",
+        "FastAPI",
+        "Python",
+        "YOLOv8",
+        "ArcFace 512D",
+        "ONNX Runtime",
+        "Google ML Kit",
+        "MediaPipe",
+        "OpenCV"
+      ]
     }
   ],
   "Projects": "Proyek",

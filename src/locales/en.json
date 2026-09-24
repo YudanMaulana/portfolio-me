@@ -90,6 +90,22 @@
         "Python",
         "Ngrok"
       ]
+    },
+    {
+      "title": "Garudashield Visit",
+      "description": "An integrated biometric AI-powered visitor management and access control ecosystem. Features an Android guest app (Flutter) for onboarding via Google Sign-In & OTP, multi-angle face enrolment with Google ML Kit & real-time face quality gating, safety induction quiz, and digital signatures. Supported by a Linux Desktop Gate terminal (MediaPipe sidecar) for hands-free gate auto-identification, and a high-performance FastAPI AI backend powered by YOLOv8-Face, ArcFace 512-D ONNX Runtime, and pose-robust embedding matching.",
+      "status": "STABLE",
+      "technologies": [
+        "Flutter",
+        "FastAPI",
+        "Python",
+        "YOLOv8",
+        "ArcFace 512D",
+        "ONNX Runtime",
+        "Google ML Kit",
+        "MediaPipe",
+        "OpenCV"
+      ]
     }
   ],
   "Projects": "Projects",

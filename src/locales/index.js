@@ -4,6 +4,7 @@ import project3 from "../assets/projects/project-3.png";
 import faceguard from "../assets/projects/garudashield_faceid.webp";
 import epatrolGf from "../assets/projects/garudashield_epatrol.webp";
 import xquest from "../assets/projects/xquest.png";
+import gsVisit from "../assets/projects/gs-visit.png";
 
 export const EXPERIENCES = [
   {
@@ -46,6 +47,7 @@ export const PROJECTS = [
   { image: faceguard },
   { image: epatrolGf },
   { image: xquest },
+  { image: gsVisit },
 ];
 
 export const CONTACT = {
