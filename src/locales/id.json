@@ -51,7 +51,7 @@
       ]
     },
     {
-      "title": "Garuda Shield Faceid",
+      "title": "Garudashield Faceid",
       "description": "Sistem manajemen kunjungan berbasis face recognition yang menggabungkan aplikasi desktop Flutter Windows untuk scan check-in/check-out, web form React melalui QR unik, Firestore, tanda tangan digital, serta ekspor PDF dan Excel.",
       "status": "STABLE",
       "technologies": [
@@ -66,7 +66,7 @@
       ]
     },
     {
-      "title": "GARUDA SHIELD E-PATROL",
+      "title": "GARUDASHIELD E-PATROL",
       "description": "Platform patroli keamanan yang menggabungkan mobile app Flutter untuk check-in lokasi berbasis GPS, foto bukti lapangan, alur patroli berbasis shift, dan manajemen akun, serta dashboard admin React untuk monitoring riwayat patroli, peninjauan arsip storage, pengelolaan lokasi, dan ekspor laporan operasional melalui Firebase.",
       "status": "STABLE",
       "technologies": [
@@ -100,6 +100,7 @@
   ],
   "Projects": "Proyek",
   "GetInTouch": "Hubungi",
+  "DownloadCV": "Unduh CV",
   "address": "Kota Cimahi, Jawa Barat, Indonesia ",
   "ToTop": "↑ Keatas"
 }

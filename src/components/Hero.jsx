@@ -13,7 +13,10 @@ const container = (delay) => ({
 });
 
 function Hero() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const isId = i18n.language === "id";
+  const cvPath = isId ? "/cv-yudan-maulana-id.pdf" : "/cv-yudan-maulana-en.pdf";
+  const cvFileName = isId ? "CV - Yudan Maulana - ID.pdf" : "CV - Yudan Maulana - EN.pdf";
 
   return (
     <div id="hero" className="min-h-[90vh] lg:min-h-screen flex items-center pb-10 lg:pb-16 pt-24 lg:pt-20">
@@ -64,14 +67,14 @@ function Hero() {
               className="flex flex-wrap justify-center lg:justify-start gap-3 lg:gap-4 mt-3 lg:mt-4"
             >
               <a
-                href="/cv-yudan-maulana.pdf"
-                download
+                href={cvPath}
+                download={cvFileName}
                 className="group relative inline-flex items-center gap-2 px-5 py-2.5 lg:px-6 lg:py-3 rounded-full font-medium text-xs lg:text-sm text-white overflow-hidden transition-all duration-300 hover:shadow-glow"
               >
                 <span className="absolute inset-0 bg-gradient-to-r from-violet-600 to-cyan-500 transition-all duration-300 group-hover:opacity-90" />
                 <span className="relative flex items-center gap-2">
                   <FaDownload className="text-xs" />
-                  Download CV
+                  {t("DownloadCV", "Download CV")}
                 </span>
               </a>
               <a
