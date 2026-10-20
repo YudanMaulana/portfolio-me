@@ -45,13 +45,18 @@ const Experience = () => {
                   <h3 className="text-sm lg:text-lg font-semibold text-neutral-200 group-hover:text-white transition-colors">
                     {experience.role}
                   </h3>
-                  <div className="flex flex-col sm:flex-row sm:items-center gap-0.5 sm:gap-2">
+                  <div className="flex flex-wrap items-center gap-1.5 sm:gap-2">
                     <p className="text-xs lg:text-sm text-violet-400">
                       {experience.company}
                     </p>
                     <span className="text-xs text-neutral-500">
                       {experience.year}
                     </span>
+                    {experience.type && (
+                      <span className="px-2 py-0.5 text-[10px] font-medium rounded-full bg-cyan-500/10 text-cyan-300 border border-cyan-500/30">
+                        {experience.type}
+                      </span>
+                    )}
                   </div>
                 </div>
 

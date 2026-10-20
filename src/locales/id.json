@@ -7,6 +7,9 @@
   "Technologies": "Teknologi",
   "Experience": "Pengalaman",
   "experience": {
+    "gdg": {
+      "description": "Berpartisipasi aktif sebagai fasilitator dalam mensukseskan acara DevFest 2026 di D'Botanica Bandung yang diselenggarakan oleh Google Developer Groups Bandung. Bertanggung jawab memandu dan mendampingi peserta selama sesi teknis, workshop pengembang, serta mendukung kelancaran seluruh rangkaian event."
+    },
     "xquest": {
       "description": "Sebuah proyek wahana hiburan berbasis teknologi 5D yang didirikan oleh PT Garudafood Sumedang. Bertanggung jawab dalam implementasi sistem game 5D menggunakan videotron, automasi wahana berbasis IoT, integrasi RFID, sensor-sensor, serta pemeliharaan sistem perangkat keras dan perangkat lunak."
     },
@@ -79,32 +82,19 @@
       ]
     },
     {
-      "title": "Chocolatos X-Quest Agentic AI",
-      "description": "Aplikasi pendamping seluler Captain Arion dan Captain Celestia untuk Chocolatos X-Quest. Menampilkan antarmuka obrolan AI yang didukung oleh Gemma 4 E2B + Ollama sebagai backend AI, berjalan di server mandiri menggunakan RTX 3060 12GB dengan Ngrok. Dibangun menggunakan bahasa Python, aplikasi ini dilengkapi dengan dukungan markdown, sinkronisasi data lokal, kemampuan pelaporan issue, serta fitur pemindaian rekaman CCTV.",
-      "status": "On PROGRESS",
-      "technologies": [
-        "Flutter",
-        "Dart",
-        "Gemma 4 E2B",
-        "Ollama",
-        "Python",
-        "Ngrok"
-      ]
-    },
-    {
       "title": "Garudashield Visit",
-      "description": "Ekosistem manajemen kunjungan dan kontrol akses terintegrasi berbasis AI Biometrik. Terdiri dari aplikasi Android (Flutter) untuk registrasi tamu via Google Sign-In & OTP, multi-angle face enrolment dengan Google ML Kit & analisis kualitas wajah real-time, kuis safety induction, serta tanda tangan digital. Didukung aplikasi Linux Desktop Gate (MediaPipe sidecar) untuk auto-identify di gerbang masuk, dan backend FastAPI bertenaga AI dengan YOLOv8-Face, ArcFace 512-D ONNX Runtime, serta pencocokan embedding toleran pose.",
-      "status": "STABLE",
+      "description": "Platform keamanan dan pemantauan operasional terpadu berbasis AI Biometrik dengan 3 pilar utama: (1) Guest Realtime Monitoring: Kiosk gate & mobile app dengan verifikasi wajah auto-identify AI, pemantauan status dan riwayat tamu aktif per cabang/area secara real-time, kuis safety induction, serta tanda tangan digital; (2) Transporter Monitoring: Manajemen alur logistik kendaraan ekspedisi, pencatatan nopol, monitoring aktivitas bongkar muat barang, dan audit pos keamanan multi-hari; (3) Attendance/HRIS: Sistem presensi mandiri karyawan magang & vendor berbasis biometrik AI dengan validasi Custom Geofencing (polygon boundary & anti-fake GPS), pengajuan izin/sakit, dan manajemen kontrak penempatan cabang.",
+      "status": "On PROGRESS",
       "technologies": [
         "Flutter",
         "FastAPI",
         "Python",
+        "Custom Geofencing",
         "YOLOv8",
         "ArcFace 512D",
         "ONNX Runtime",
         "Google ML Kit",
-        "MediaPipe",
-        "OpenCV"
+        "MediaPipe"
       ]
     }
   ],

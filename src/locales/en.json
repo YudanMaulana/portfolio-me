@@ -7,6 +7,9 @@
   "Technologies": "Technologies",
   "Experience": "Experience",
   "experience": {
+    "gdg": {
+      "description": "Actively participated as an event facilitator contributing to the success of DevFest 2026 at D'Botanica Bandung organized by Google Developer Groups Bandung. Responsible for guiding and assisting participants during technical sessions and developer workshops, ensuring smooth event execution."
+    },
     "xquest": {
       "description": "A 5D entertainment attraction project established by PT Garudafood Sumedang. Responsible for implementing 5D gaming systems using videotron displays, automating attractions with IoT technology, integrating RFID systems, various sensors, and maintaining hardware and software systems."
     },
@@ -79,32 +82,19 @@
       ]
     },
     {
-      "title": "Chocolatos X-Quest Agentic AI",
-      "description": "Captain Arion and Captain Celestia mobile companion app for Chocolatos X-Quest. An AI chat interface powered by Gemma 4 E2B + Ollama as the AI backend, running on a self-hosted server with an RTX 3060 12GB and exposed via Ngrok. Built using Python, it features markdown support, local data synchronization, issue tracking capabilities, and CCTV feed scanning.",
-      "status": "On PROGRESS",
-      "technologies": [
-        "Flutter",
-        "Dart",
-        "Gemma 4 E2B",
-        "Ollama",
-        "Python",
-        "Ngrok"
-      ]
-    },
-    {
       "title": "Garudashield Visit",
-      "description": "An integrated biometric AI-powered visitor management and access control ecosystem. Features an Android guest app (Flutter) for onboarding via Google Sign-In & OTP, multi-angle face enrolment with Google ML Kit & real-time face quality gating, safety induction quiz, and digital signatures. Supported by a Linux Desktop Gate terminal (MediaPipe sidecar) for hands-free gate auto-identification, and a high-performance FastAPI AI backend powered by YOLOv8-Face, ArcFace 512-D ONNX Runtime, and pose-robust embedding matching.",
-      "status": "STABLE",
+      "description": "An integrated security and operational monitoring platform powered by Biometric AI with 3 core pillars: (1) Guest Realtime Monitoring: Gate kiosks & mobile app with AI biometric auto-identify, live tracking of active visitors per branch/area, safety induction quiz, and digital signatures; (2) Transporter Monitoring: Expedition vehicle logistics tracking, license plate records, loading/unloading workflow monitoring, and multi-day security post audits; (3) Attendance/HRIS: Self-service attendance system for interns and vendor workers via AI facial verification with Custom Geofencing (polygon boundary & anti-fake GPS validation), leave/permit requests, and branch placement contract management.",
+      "status": "On PROGRESS",
       "technologies": [
         "Flutter",
         "FastAPI",
         "Python",
+        "Custom Geofencing",
         "YOLOv8",
         "ArcFace 512D",
         "ONNX Runtime",
         "Google ML Kit",
-        "MediaPipe",
-        "OpenCV"
+        "MediaPipe"
       ]
     }
   ],

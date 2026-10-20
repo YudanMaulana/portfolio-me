@@ -3,14 +3,26 @@ import project2 from "../assets/projects/project-2.png";
 import project3 from "../assets/projects/project-3.png";
 import faceguard from "../assets/projects/garudashield_faceid.webp";
 import epatrolGf from "../assets/projects/garudashield_epatrol.webp";
-import xquest from "../assets/projects/xquest.png";
 import gsVisit from "../assets/projects/gs-visit.png";
 
 export const EXPERIENCES = [
   {
+    id: "gdg",
+    year: "2026",
+    type: "Part-time / Event",
+    role: "Volunteer Facilitator",
+    company: "Google Developer Bandung",
+    technologies: [
+      "DevFest 2026",
+      "Event Coordination",
+      "Community",
+      "Technical Facilitation",
+    ],
+  },
+  {
     id: "xquest",
     year: "2025 - Present",
-    role: "IT / Technical Support",
+    role: "IT SUPPORT",
     company: "Xquest Wahana 5D",
     technologies: [
       "IoT",
@@ -46,7 +58,6 @@ export const PROJECTS = [
   { image: project3 },
   { image: faceguard },
   { image: epatrolGf },
-  { image: xquest },
   { image: gsVisit },
 ];
 
